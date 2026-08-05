@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SentinelAI - SOC Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            🛡 SentinelAI
+        </div>
+
+        <button>🏠 Dashboard</button>
+
+        <button>🤖 AI Chat</button>
+
+        <button>🐞 Threats</button>
+
+        <button>📄 Reports</button>
+
+        <button>⚙ Settings</button>
+
+    </div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <h1>AI Powered SOC Dashboard</h1>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Security Score</h3>
+
+                <h2>96%</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Threats Today</h3>
+
+                <h2>12</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Critical Alerts</h3>
+
+                <h2>2</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Logs Today</h3>
+
+                <h2>15,281</h2>
+
+            </div>
+
+        </div>
+
+        <div class="chat-box" id="chat">
+
+            <div class="ai">
+
+                👋 <b>Welcome to SentinelAI.</b><br><br>
+
+                Upload a Windows Event Log or ask a SOC question.
+
+            </div>        </div>
+
+        <!-- Bottom Input Area -->
+
+        <div class="bottom">
+
+            <button class="upload-btn" onclick="document.getElementById('file').click()">
+                📤 Upload Log
+            </button>
+
+            <input
+                type="file"
+                id="file"
+                accept=".evtx,.txt,.log"
+                hidden
+            >
+
+            <input
+                type="text"
+                id="q"
+                placeholder="Ask SentinelAI about threats..."
+            >
+
+            <button onclick="analyze()">
+                Analyze
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>         </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
